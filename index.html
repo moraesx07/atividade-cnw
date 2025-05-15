@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neymar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #4caf50;
+      }
+      .container {
+        text-align: center;
+      }
+      img {
+        width: 300px;
+        border-radius: 10px;
+        margin: 20px 0;
+      }
+      .text {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Neymar Jr.</h1>
+      <!-- Referência para a imagem local -->
+      <img src="neymar.jpg" alt="Neymar" />
+      <p class="text">
+        Neymar da Silva Santos Júnior, mais conhecido como Neymar, é um dos
+        maiores jogadores de futebol do Brasil e do mundo. Nascido em Mogi das
+        Cruzes, São Paulo, no dia 5 de fevereiro de 1992, Neymar se destacou por
+        seu talento com a bola, sua habilidade de driblar adversários e sua
+        velocidade impressionante. Desde muito jovem, se destacou nas categorias
+        de base do Santos FC, e logo se transferiu para o FC Barcelona, onde
+        formou um trio ofensivo lendário com Lionel Messi e Luis Suárez.
+      </p>
+      <p class="text">
+        Atualmente, Neymar joga no Paris Saint-Germain (PSG), mas sua carreira
+        também é marcada por sua presença na Seleção Brasileira, com a qual
+        conquistou títulos importantes, como a Copa das Confederações de 2013 e
+        a Copa América de 2013. Ele é considerado um dos maiores ícones do
+        futebol mundial.
+      </p>
+      <button class="btn" onclick="mudarFundo()">Mudar Cor de Fundo</button>
+    </div>
+
+    <script>
+      // Função para mudar a cor de fundo da página
+      function mudarFundo() {
+        // Pegando uma cor aleatória
+        const cores = ["#f4f4f4", "#e0f7fa", "#fff3e0", "#c8e6c9", "#ffeb3b"];
+        const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+
+        // Alterando o fundo da página
+        document.body.style.backgroundColor = corAleatoria;
+      }
+    </script>
+  </body>
+</html>
