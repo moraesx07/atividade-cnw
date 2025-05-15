@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bem-vindo à Página Secundária</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        margin: 0;
+      }
+
+      .header {
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        text-align: center;
+      }
+
+      .header a {
+        color: #fff;
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin-top: 60px; /* Para não sobrepor o cabeçalho fixo */
+      }
+
+      .img-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .img-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .img-container img:hover {
+        transform: scale(1.05);
+      }
+
+      .text {
+        font-size: 1.2rem;
+        color: #333;
+        margin-top: 20px;
+        line-height: 1.8;
+      }
+
+      .fun-box {
+        margin-top: 30px;
+        padding: 30px;
+        background-color: #4caf50;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .fun-box:hover {
+        background-color: #45a049;
+      }
+
+      footer {
+        margin-top: 40px;
+        font-size: 0.9rem;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cabeçalho com link para voltar à página principal -->
+    <div class="header">
+      <a href="index.html">&#x2190; Voltar para a Página Principal</a>
+    </div>
+
+    <!-- Conteúdo da página -->
+    <div class="container">
+      <h1>Neymar Jr. em Ação!</h1>
+
+      <div class="img-container">
+        <img src="neymar2.jpg" alt="Neymar em Ação" />
+      </div>
+
+      <p class="text">
+        Neymar Jr. é um dos maiores jogadores da história do futebol brasileiro.
+        Além de sua habilidade impressionante em campo, ele também é um
+        verdadeiro ícone mundial, com milhões de fãs ao redor do mundo. Aqui,
+        vamos celebrar seu talento com um pouco de diversão!
+      </p>
+
+      <!-- Função interativa com JavaScript -->
+      <div class="fun-box" onclick="fazerDivertido()">
+        Clique para Algo Divertido!
+      </div>
+
+      <footer>
+        <p>Site feito com ❤ para fãs de futebol. Design por ChatGPT</p>
+      </footer>
+    </div>
+
+    <script>
+      // Função interativa divertida
+      function fazerDivertido() {
+        let textoDivertido = [
+          "Neymar acaba de marcar um golaço!",
+          "Você acaba de driblar 5 adversários!",
+          "O PSG acaba de ganhar a Champions League com Neymar!",
+        ];
+        let aleatorio = Math.floor(Math.random() * textoDivertido.length);
+        alert(textoDivertido[aleatorio]);
+      }
+    </script>
+  </body>
+</html>
